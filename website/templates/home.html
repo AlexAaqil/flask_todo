@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block main_content %}
+<section class="Homepage">
+    <div class="hero">
+        <div class="hero_text">
+            <h1>Todos Application</h1>
+            <p>Managing your todos has never been easier.</p>
+            <div class="action_btn">
+                {% if user.is_authenticated == False %}
+                    <a href="/login">Login</a>
+                {% endif %}
+            </div>            
+        </div>
+        <div class="hero_img">
+            <img src="{{ url_for('static', filename='images/hero.ico') }}" alt="todos" />
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %} Todos {% endblock %}
+
+{% block main_content %}
+<section class="Notes">
+    <div class="form_contaniner container">
+        <form method="post">
+            <div class="row b-1">
+                <div class="col">
+                    <input type="text" name="todo" id="todo" class="form-control" placeholder="Insert a task todo">
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Save Todo</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="todos">
+        <ul class="list-group text-white" id="todos">
+            {% for todo in user.todos %}
+            <li>
+                {{ todo.todo }}
+                <button type="button" class="close text-white" onClick="deleteTodo({{ todo.id }})">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+{% endblock %}

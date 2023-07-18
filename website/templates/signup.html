@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %} Signup {% endblock %}
+{% block main_content %}
+<section class="Auth Signup">
+    <div class="form-container">
+        <p class="title">Signup</p>
+        <form method="post" class="form">
+            <div class="input-group">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" placeholder="First Name">
+            </div>
+            <div class="input-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+            </div>
+            <div class="input-group">
+                <label for="email_address">Email Address</label>
+                <input type="email" name="email_address" id="email_address" placeholder="Email Address">
+            </div>            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">                    
+            </div>
+            <button type="submit" class="sign">Signup</button>
+        </form>
+        <p>Already have an account?
+            <a rel="noopener noreferrer" href="/login" class="">Login</a>
+        </p>
+    </div>
+</section>
+{% endblock %}

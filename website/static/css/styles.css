@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.action_btn {
+  margin: 2em 0 0;
+}
+.action_btn a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 32px;
+  padding: 12px 32px;
+  font-weight: bold;
+  transform: all 0.7s ease-in;
+}
+.action_btn a:hover {
+  background: #fff;
+  color: rgb(1, 1, 39);
+}
+
+body {
+  background: rgb(1, 1, 39);
+  color: #fff;
+}
+
+nav {
+  padding: 0.5em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgb(63, 63, 129);
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+nav .brand {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 1em;
+}
+
+main {
+  padding: 0.5em 1.5em;
+}
+
+.Homepage .hero {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.Homepage .hero .hero_text,
+.Homepage .hero .hero_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Homepage .hero .hero_text h1 {
+  font-size: 2.8em;
+}
+.Homepage .hero .hero_text p {
+  font-size: 1.4em;
+  color: #c4c4c4;
+}
+.Homepage .hero .hero_img img {
+  width: 300px;
+}
+
+.Auth {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Auth .form-container {
+  width: 320px;
+  padding: 2rem;
+  color: rgb(243, 244, 246);
+  background: rgba(2, 6, 49, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.Auth .title {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+.Auth .form {
+  margin-top: 1.5rem;
+}
+.Auth .input-group {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.Auth .input-group label {
+  display: block;
+  color: rgb(156, 163, 175);
+  margin-bottom: 4px;
+}
+.Auth .input-group input {
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid rgb(55, 65, 81);
+  outline: 0;
+  background-color: rgb(17, 24, 39);
+  padding: 0.75rem 1rem;
+  color: rgb(243, 244, 246);
+}
+.Auth .input-group input:focus {
+  border-color: rgb(167, 139, 250);
+}
+.Auth button {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 0.75rem;
+  color: rgb(17, 24, 39);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  margin: 1em 0;
+}
+.Auth p a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding: 2px;
+}/*# sourceMappingURL=styles.css.map */
