@@ -41,7 +41,7 @@ def signup():
         elif len(first_name) < 1:
             flash('First name must be more than one character', category='error')
         elif len(last_name) < 1:
-            flash('Last name must be more than one character', category='error')        
+            flash('Last name must be more than one character', category='error')
         elif len(password) < 4:
             flash('Password must be at least 4 characters', category='error')
         else:
